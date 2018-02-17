@@ -1,0 +1,39 @@
+{
+  "name": "rsvp-devc",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "stylus": "stylus -u nib -c -w -o public/css/style.css src/index.styl"
+  },
+  "devDependencies": {
+    "nib": "^1.1.2",
+    "stylus": "^0.54.5"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gndx/RSVP-DEVC.git"
+  },
+  "keywords": [
+    "rsvp",
+    "facebook",
+    "developer",
+    "circles"
+  ],
+  "author": "Oscar Barajas <oscar@dragons.mx>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gndx/RSVP-DEVC/issues"
+  },
+  "homepage": "https://github.com/gndx/RSVP-DEVC#readme"
+}
