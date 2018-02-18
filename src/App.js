@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Components/Header';
+import EventInfo from './Components/EventInfo';
 
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div className='main'>
         <Header />
+        <EventInfo />
       </div>
     );
   }
