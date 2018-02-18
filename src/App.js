@@ -3,6 +3,7 @@ import Header from './Components/Header';
 import EventInfo from './Components/EventInfo';
 import Agenda from './Components/Agenda';
 import Speakers from './Components/Speakers';
+import Venue from './Components/Venue';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <EventInfo />
         <Agenda />
         <Speakers />
+        <Venue />
       </div>
     );
   }
