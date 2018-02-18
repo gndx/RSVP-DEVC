@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Components/Header';
 import EventInfo from './Components/EventInfo';
 import Agenda from './Components/Agenda';
+import Speakers from './Components/Speakers';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         <Header />
         <EventInfo />
         <Agenda />
+        <Speakers />
       </div>
     );
   }
