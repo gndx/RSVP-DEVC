@@ -10,7 +10,7 @@ const Agenda = ({ agenda }) => {
             {agenda.map(item =>
               <div className="row box" key={Math.random()}>
                 <div className="col-sm-1">
-                  <img src="http://s3.amazonaws.com/chewiekie/img/devcircle-icon.png" alt="Developer Circles Logo" />
+                  <img src="https://s3.amazonaws.com/chewiekie/img/devcircle-icon.png" alt="Developer Circles Logo" />
                 </div>
                 <div className="col-sm-2">
                   <h3>{item.time}</h3>

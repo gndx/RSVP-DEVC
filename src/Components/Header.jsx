@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({ landing, event, eventDate, time, rsvp }) => {
   return (
-    <header styles={`backgroundImage: ${landing.background}`}>
+    <header style={{backgroundImage: "url(" + landing.background + ")"}} >
       <div className="content">
         <div className="container">
           <div className="row">

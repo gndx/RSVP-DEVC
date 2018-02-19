@@ -86,7 +86,7 @@ App.defaultProps = {
   speakers: [
     {
       name: 'Fer Perales', 
-      photo: 'http://s3.amazonaws.com/chewiekie/img/fer-perales-devc-gdl.jpg', 
+      photo: 'https://s3.amazonaws.com/chewiekie/img/fer-perales-devc-gdl.jpg', 
       bio: 'Actualmente trabajo como Senior Software Engineer en michelada.io. He estado dedicándome de tiempo completo al desarrollo web de manera profesional desde hace 5 años.',
       jobTitle: 'Ingenierio de software',
       conferenceTitle: '¿Quién es ese GraphQL del que todos mis amigos están hablando?',
@@ -98,7 +98,7 @@ App.defaultProps = {
     },
     {
       name: 'Zura Guerra', 
-      photo: 'http://s3.amazonaws.com/chewiekie/img/zura-guerra-devc-gdl.jpg', 
+      photo: 'https://s3.amazonaws.com/chewiekie/img/zura-guerra-devc-gdl.jpg', 
       bio: '',
       jobTitle: 'Por confirmar',
       conferenceTitle: '',
