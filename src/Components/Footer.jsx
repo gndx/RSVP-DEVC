@@ -5,10 +5,10 @@ const Footer = ({ email, name }) => {
     <footer>
       <div className="container">
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-sm-6 col-xs-12">
             <h4>{name}</h4>
           </div>
-          <div className="col-sm-6 right">
+          <div className="col-sm-6 col-xs-12 right">
             <h4><a href={`mailto:${email}`}>Contactar con el organizador</a></h4>
           </div>
         </div>

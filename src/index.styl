@@ -143,7 +143,6 @@ Header
     display: inline-block
     font-size 20px
   span  
-    width: 20%
     font-size: 14px
     font-weight: 300
   .col-sm-3
@@ -309,7 +308,6 @@ footer
   border-top 1px solid rgba(space,0.2)
   color Facebook
   h4 
-    display inline-block
     font-size 14px
     font-weight 300
     margin-top 12px
@@ -317,3 +315,81 @@ footer
     color Facebook
   .right
     text-align: right 
+
+@media (max-width: 676px)
+  header
+    .logo
+      text-align center
+    .nav 
+      margin 0 auto
+      text-align center
+    .hero 
+      text-align center
+      img 
+        width: 90% !important
+      h2 
+        margin-top 10vh
+        font-size 44px
+        span 
+          font-size 40px
+      p 
+        width 80%
+        margin 0 auto
+        font-size 16px
+        padding-bottom 40px
+    .nav-link 
+      padding .5rem .5rem
+  #eventInfo
+    padding 80px 0px
+    h2
+      font-size 26px
+    p
+      width 100%
+  #agenda
+    padding 80px 0px
+    text-align: center
+    h2
+      font-size 28px
+      margin-bottom 20px
+    img 
+      display none !important
+    h3
+      margin-left: 0px
+    span  
+      font-size: 14px
+      font-weight: 300
+    .col-sm-3
+      padding-left: 15px
+      padding-right: 15px 
+    .box 
+      margin-bottom 40px
+  #speakers
+    padding-bottom: 240px
+  #venue 
+    #map 
+      width 100%
+      min-height: auto
+    .contact-form 
+      margin-top -180px
+      right 0
+      width 85%
+      h2 
+        font-size 18px
+      h3 
+        font-size 20px
+      p 
+        font-size 13px
+      .form-control 
+        height 38px
+      textarea
+        height 80px !important
+      button 
+        padding 10px 18px !important
+        display block
+        width 100%
+        font-size 14px
+  footer 
+    h4 
+      text-align center !important
+    .right 
+      text-align center
