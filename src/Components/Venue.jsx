@@ -1,32 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import GoogleMaps from './GoogleMaps';
 import Mailchimp from './Mailchimp';
 
-
-const formProps = {
-  action: '//chewiekie.us17.list-manage.com/subscribe/post?u=fa8810bc4fd257bf6b7efd4fe&amp;id=060a547966',
-}
-
-
-class Venue extends Component {
-  render() {
-    return(
-      <section id='venue'>
-      <GoogleMaps />
+const Venue = ({ event, eventDate, time, rsvp }) => {
+  return (
+    <section id='venue'>
+      <GoogleMaps lat={event.venue.lat} lng={event.venue.lng} />
       <div className="containesr">
         <div className="row">
           <div className="contact-form">
-            <h2>28 de Febrero del 2018</h2>
-            <h3>Centraal Guadalajara - 7:00 P.M.</h3>
-            <p>Av. Ignacio Luis Vallarta 3300, 44690 Guadalajara, Jal.</p>
+            <h2>{eventDate}</h2>
+            <h3>{event.venue.name} - {time}</h3>
+            <p>{event.venue.address}</p>
             <h4>Registrate:</h4>
-            <Mailchimp {...formProps} />
+            {rsvp ? <Mailchimp action={event.mailChimpEvent} /> :
+              <h2 className='rsvpClose'>{event.messageRsvp}</h2>
+            }
           </div>
         </div>
       </div>
     </section>
-    )
-  }
-}
+  );
+};
 
 export default Venue;

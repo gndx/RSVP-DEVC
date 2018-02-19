@@ -1,48 +1,51 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Speakers extends Component {
-  render() {
-    return (
-      <section id="speakers">
-        <div className="container">
+const Speakers = ({ speakers }) => {
+  return (
+    <section id="speakers">
+      <div className="container">
           <div className="row">
             <div className="col-sm-10 offset-sm-1">
               <h2>Speakers</h2>
-            </div>
-            <div className="col-sm-4">
-              <div className="card">
-                <img src="" width="100%" alt="" />
-                <div className="content">
-                  <div className="head">
-                    <div className="htitle">
-                      <h3>Titulo</h3>
-                      <h4>Oscar Barajas</h4>
-                      <span>Fullstack en Chewiekie.com</span>
+
+              <div className="row">
+              
+              {speakers.map(speaker =>
+                <div className="col-sm-6" key={Math.random()}>
+                  <div className="card">
+                    <img src={speaker.photo} width="100%" alt="" />
+                    <div className="content">
+                      <div className="head">
+                        <div className="htitle">
+                          <h3>{speaker.conferenceTitle}</h3>
+                          <h4>{speaker.name}</h4>
+                          <span>{speaker.jobTitle}</span>
+                        </div>
+                        <p>{speaker.description}</p>
+                      </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni, sed sequi, non aut maiores obcaecati deserunt est nobis earum recusandae necessitatibus nisi!</p>
+                    <div className="more">
+                      <ul>
+                        {speaker.social.map(socialNetwork =>
+                          <li key={socialNetwork.name}>
+                            <a href={socialNetwork.url} target='_blank' rel="noopener noreferrer">
+                              <i className={'fa fa-' + socialNetwork.name + '-square'}></i>
+                            </a>
+                          </li>
+                        )}
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div className="more">
-                  <ul>
-                    <li >
-                      <a href='/' target='_blank' rel="noopener noreferrer">
-                        <i className={'fa fa-' + 'facebook' + '-square'}></i>
-                      </a>
-                    </li>
-                    <li >
-                      <a href='/' target='_blank' rel="noopener noreferrer">
-                        <i className={'fa fa-' + 'facebook' + '-square'}></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              )}
+
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    )
-  }
-}
+
+      </div>
+    </section>
+  );
+};
 
 export default Speakers;

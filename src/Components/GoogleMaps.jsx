@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps"
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
 const MapWithAMarker = withScriptjs(withGoogleMap((props) =>
   <GoogleMap
     defaultZoom={18}
-    defaultCenter={{ lat: 20.6698553, lng: -103.3824093 }}
+    defaultCenter={{ lat: props.lat, lng: props.lng }}
   >
-      <Marker position={{ lat: 20.6698553, lng: -103.3824093 }}></Marker>
+    <Marker position={{ lat: props.lat, lng: props.lng }}></Marker>
   </GoogleMap>
 ));
 
 class GoogleMaps extends Component {
   render() {
+    const {lat, lng } = this.props;
     return (
       <div className='innerMap' id="map">
         <MapWithAMarker
@@ -19,6 +20,8 @@ class GoogleMaps extends Component {
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div className='responsiveMap' style={{ height: `670px` }} />}
           mapElement={<div style={{ height: `100%` }} />}
+          lat={lat}
+          lng={lng}
         />
       </div>
     )

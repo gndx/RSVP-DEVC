@@ -2,7 +2,6 @@ import React from "react"
 import jsonp from "jsonp"
 
 const getAjaxUrl = url => url.replace('/post?', '/post-json?')
-
 class Mailchimp extends React.Component {
   constructor(props, ...args) {
     super(props, ...args)
@@ -62,7 +61,7 @@ class Mailchimp extends React.Component {
 
   render() {
     const { action, messages } = this.props;
-    const { status, msg } = this.state;
+    const { status } = this.state;
     return (
       <form action={action} method="post" ref='rsvp' noValidate>
         <div className="form-group">
