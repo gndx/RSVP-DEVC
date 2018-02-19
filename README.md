@@ -2,7 +2,7 @@
 RSVP Landing Page for Facebook Developer Circles Guadalajara
 
 ![RSVP DEVC](https://raw.githubusercontent.com/gndx/RSVP-DEVC/master/screenshot.png)
-Demo: https://devcdgl.github.io 
+Demo: https://devcgdl.github.io 
 
 # Install Dependencies
 ```
@@ -59,7 +59,7 @@ App.defaultProps = {
   speakers: [
     {
       name: 'Jhon Doe', 
-      photo: 'https://s3.amazonaws.com/chewiekie/img/fer-perales-devc-gdl.jpg',  //
+      photo: '<URL_IMG>',  //
       bio: 'Jhon Deo bio',
       jobTitle: 'FrontEnd Developer',
       conferenceTitle: 'Talk Title',
@@ -71,7 +71,7 @@ App.defaultProps = {
     },
     {
       name: 'Oscar Barajas', 
-      photo: 'https://s3.amazonaws.com/chewiekie/img/zura-guerra-devc-gdl.jpg', 
+      photo: '<URL_IMG>', 
       bio: 'Oscar Barajas Bio',
       jobTitle: 'Backend Developer',
       conferenceTitle: 'Talk title',
