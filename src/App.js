@@ -80,7 +80,7 @@ App.defaultProps = {
     {time: '7:00PM ', activity: 'Registro', attend: 'DEVC GDL'},
     {time: '7:30PM', activity: 'Bienvenida', attend: 'DEVC GDL'},
     {time: '7:40PM', activity: '¿Quién es ese GraphQL del que todos mis amigos están hablando?', attend: 'Fer Perales'},
-    {time: '8:20PM', activity: 'Messenger Platform', attend: 'Zura Guerra'},
+    {time: '8:20PM', activity: 'Jugando con Messenger API', attend: 'Zura Guerra'},
     {time: '9:00PM', activity: 'Networking', attend: 'Comunidad'},
   ],
   speakers: [
@@ -98,13 +98,15 @@ App.defaultProps = {
     },
     {
       name: 'Zura Guerra', 
-      photo: 'https://s3.amazonaws.com/chewiekie/img/zura-guerra-devc-gdl.jpg', 
-      bio: '',
-      jobTitle: 'Por confirmar',
-      conferenceTitle: '',
-      description: 'Por confirmar',
+      photo: 'http://s3.amazonaws.com/chewiekie/img/zura-guerra-devc.jpg', 
+      bio: 'Zura Guerra es programadora, artista visual en hiatus y estudiante de música. Le gusta hacer amigos; salúdala si la ves.',
+      jobTitle: 'Zuricornio @ Mazing Studio',
+      conferenceTitle: 'Jugando con Messenger API',
+      description: 'Zura Guerra es desarrolladora de software, negociadora, artista indisciplinada y groupie de comunidades de tech. Ha aprendido, organizado, hablado, mentoreado y participado en diversos meetups, hackathones y Startup Weekends alrededor del país. Ha expuesto y publicado arte conceptual en México e Inglaterra. Baila salsa.',
       social: [
-        {name: 'twitter', url: 'https://github.com/grafofilia'}
+        {name: 'twitter', url: 'https://twitter.com/Grafofilia'}
+        {name: 'github', url: 'https://github.com/ZuraGuerra'}
+        {name: 'facebook', url: 'https://facebook.com/ZuraGuerra'}
       ],
     }
   ]
