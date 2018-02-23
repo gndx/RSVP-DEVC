@@ -1,12 +1,13 @@
 language: node_js
 node_js:
-- "stable"
+  - "stable"
 cache:
-directories:
-- node_modules
+  directories:
+  - node_modules
+install:
+  - npm install
 script:
-- npm test
-- npm run build
+  - npm run build
 deploy:
   provider: pages
   skip-cleanup: true
