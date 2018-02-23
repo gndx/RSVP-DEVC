@@ -11,6 +11,8 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $token
+  repo: /DEVCGDL/devcgdl.github.io
+  github-url: https://github.com/DEVCGDL/devcgdl.github.io
   keep-history: true
    local_dir: build
   on:
