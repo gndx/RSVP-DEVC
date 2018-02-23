@@ -104,8 +104,8 @@ App.defaultProps = {
       conferenceTitle: 'Jugando con Messenger API',
       description: 'Zura Guerra es desarrolladora de software, negociadora, artista indisciplinada y groupie de comunidades de tech. Ha aprendido, organizado, hablado, mentoreado y participado en diversos meetups, hackathones y Startup Weekends alrededor del país. Ha expuesto y publicado arte conceptual en México e Inglaterra. Baila salsa.',
       social: [
-        {name: 'twitter', url: 'https://twitter.com/Grafofilia'}
-        {name: 'github', url: 'https://github.com/ZuraGuerra'}
+        {name: 'twitter', url: 'https://twitter.com/Grafofilia'},
+        {name: 'github', url: 'https://github.com/ZuraGuerra'},
         {name: 'facebook', url: 'https://facebook.com/ZuraGuerra'}
       ],
     }
